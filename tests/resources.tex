@@ -1,0 +1,30 @@
+\documentclass{academic-cv}
+\CVSetup{name={Alex Example},language={zh-CN}}
+\CVStyle{density=compact,date-width=25mm}
+\addbibresource{tests/resources.bib}
+\begin{document}
+\CVHeader
+\CVSection{学术成果 / Publications}
+\nocite{*}
+\CVPublicationGroup{journal}{期刊论文 / Journal articles}{J}
+\CVPublicationGroup{conference}{会议论文 / Conference papers}{C}
+\CVPublicationGroup{preprint}{预印本 / Preprints}{P}
+\CVPublicationGroup{underreview}{在审论文 / Under review}{U}
+% A narrow resource row forces a break between link units. This also exercises
+% the public bibliography formatter with the same separators used above.
+\CVSection{资源换行 / Resource wrapping}
+\makeatletter
+\CVParagraph{%
+\begingroup
+\noindent\begin{minipage}{30mm}
+  \raggedright
+  \cv@resourcelink{https://example.org/resources/wrap/article}{external-link-alt}{\ifcv@chinese 出版页\else Publisher\fi}%
+  \cv@linksep
+  \cv@resourcelink{https://example.org/resources/wrap/code}{code}{\ifcv@chinese 代码\else Code\fi}%
+  \cv@linksep
+  \cv@resourcelink{https://example.org/resources/wrap/project}{external-link-alt}{\ifcv@chinese 项目\else Project\fi}.
+\end{minipage}
+\endgroup
+}
+\makeatother
+\end{document}

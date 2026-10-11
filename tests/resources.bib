@@ -1,0 +1,116 @@
+% Fictional records covering every subset of the three optional resource fields.
+@article{resource-all,
+  author = {Example, Alex},
+  title = {Resource Links in Collaborative Research: 中文与 English 混排的长标题},
+  journaltitle = {Example Journal of Reproducible Research},
+  date = {2026}, pages = {101--129},
+  usera = {https://example.org/resources/all/article},
+  userb = {https://example.org/resources/all/code?file=src_main.py&tag=cv%20test#usage},
+  userc = {https://example.org/resources/all/project},
+  keywords = {journal}
+}
+@article{resource-pdf-code,
+  author = {Example, Alex},
+  title = {A Paper and Its Code},
+  journaltitle = {Example Journal}, date = {2025},
+  usera = {https://example.org/resources/pdf-code/article},
+  userb = {https://example.org/resources/pdf-code/code},
+  keywords = {journal}
+}
+@article{resource-pdf-project,
+  author = {Example, Alex},
+  title = {A Paper and Its Project},
+  journaltitle = {Example Journal}, date = {2024},
+  usera = {https://example.org/resources/pdf-project/article},
+  userc = {https://example.org/resources/pdf-project/project},
+  keywords = {journal}
+}
+@article{resource-code-project,
+  author = {Example, Alex},
+  title = {代码与项目：Resources without an Article Page},
+  journaltitle = {Example Journal}, date = {2023},
+  userb = {https://example.org/resources/code-project/code},
+  userc = {https://example.org/resources/code-project/project},
+  keywords = {journal}
+}
+@article{resource-pdf,
+  author = {Example, Alex}, title = {A Paper Only},
+  journaltitle = {Example Journal}, date = {2022},
+  usera = {https://example.org/resources/pdf/article},
+  keywords = {journal}
+}
+@article{resource-code,
+  author = {Example, Alex}, title = {Code Only},
+  journaltitle = {Example Journal}, date = {2021},
+  userb = {https://example.org/resources/code/code},
+  keywords = {journal}
+}
+@article{resource-project,
+  author = {Example, Alex}, title = {A Project Only},
+  journaltitle = {Example Journal}, date = {2020},
+  userc = {https://example.org/resources/project/project},
+  keywords = {journal}
+}
+@article{resource-none,
+  author = {Example, Alex}, title = {No Resources},
+  journaltitle = {Example Journal}, date = {2019},
+  usera = {}, userb = {}, userc = {},
+  keywords = {journal}
+}
+
+% Explicit dummy identifiers exercise routing; they do not name real papers.
+@article{published-doi,
+  author = {Example, Alex}, title = {Published Version Takes Priority},
+  journaltitle = {Example Journal}, date = {2026},
+  doi = {10.1234/long_identifier_for_resource_link_layout_checks},
+  url = {https://example.org/unused-publisher-page},
+  usera = {https://example.org/unused-legacy-page},
+  eprinttype = {arxiv}, eprint = {TEMPLATE_PUBLISHED},
+  keywords = {journal}
+}
+@article{published-url,
+  author = {Example, Alex}, title = {Publisher Page without a DOI},
+  journaltitle = {Example Journal}, date = {2026},
+  url = {https://example.org/citation-url/long_segment/long_segment/long_segment/long_segment/long_segment/long_segment/long_segment/long_segment/search?q=cv&tag=research%20data#methods},
+  keywords = {journal}
+}
+@unpublished{preprint-arxiv,
+  author = {Example, Alex}, title = {arXiv Entry Takes Priority before Publication},
+  date = {2026}, eprinttype = {arxiv}, eprint = {TEMPLATE_PREPRINT},
+  doi = {10.1234/unused_preprint_identifier},
+  url = {https://example.org/unused-preprint-page},
+  keywords = {preprint}
+}
+@article{accepted-arxiv,
+  author = {Example, Alex}, title = {Accepted Manuscript with an arXiv Version},
+  journaltitle = {Example Journal}, date = {2026}, pubstate = {inpress},
+  eprinttype = {arXiv}, eprint = {TEMPLATE_ACCEPTED},
+  doi = {10.1234/unused_accepted_identifier},
+  url = {https://example.org/unused-accepted-publisher-page},
+  keywords = {journal}
+}
+@inproceedings{accepted-conference-arxiv,
+  author = {Example, Alex}, title = {Accepted Conference Paper with an arXiv Version},
+  booktitle = {Proceedings of the Example Conference}, date = {2026},
+  pubstate = {forthcoming},
+  eprinttype = {arxiv}, eprint = {TEMPLATE_ACCEPTED_CONFERENCE},
+  doi = {10.1234/unused_accepted_conference_identifier},
+  url = {https://example.org/unused-accepted-conference-page},
+  keywords = {conference}
+}
+@unpublished{preprint-url,
+  author = {Example, Alex}, title = {A Preprint from Another Repository},
+  date = {2026}, eprinttype = {other}, eprint = {TEMPLATE_OTHER},
+  url = {https://example.org/preprints/url-only},
+  usera = {https://example.org/unused-preprint-legacy},
+  keywords = {preprint}
+}
+@unpublished{preprint-legacy,
+  author = {Example, Alex}, title = {Legacy Article Page Field},
+  date = {2026}, usera = {https://example.org/preprints/legacy},
+  keywords = {preprint}
+}
+@unpublished{pending-no-page,
+  author = {Example, Alex}, title = {A Manuscript without a Public Page},
+  date = {2026}, keywords = {underreview}
+}

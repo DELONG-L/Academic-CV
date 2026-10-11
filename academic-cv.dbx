@@ -1,0 +1,5 @@
+\ProvidesFile{academic-cv.dbx}[2026/10/11 Academic CV resource URL fields]
+% Treat resource targets like the standard url field, so Biber writes them
+% verbatim rather than interpreting percent signs or other URL characters.
+\DeclareDatamodelFields[type=field,datatype=uri]{usera,userb,userc}
+\endinput

@@ -1,0 +1,28 @@
+% Internal typesetting fixture; all personal details are fictional.
+\documentclass{academic-cv}
+\input{config/style.tex}
+\CVSetup{name={林知远 · Zhiyuan Lin},position={AI 与可信计算研究},
+  affiliation={示范大学 School of Computing},language={zh-CN},updated={2026年10月}}
+\newsavebox{\CVTypographyProbe}
+\begin{document}
+\CVHeader
+\sbox{\CVTypographyProbe}{使用Python处理数据}
+\typeout{CVimplicit=\the\wd\CVTypographyProbe}
+\sbox{\CVTypographyProbe}{使用 Python 处理数据}
+\typeout{CVexplicit=\the\wd\CVTypographyProbe}
+\sbox{\CVTypographyProbe}{使用\textbf{Python}处理数据}
+\typeout{CVboldimplicit=\the\wd\CVTypographyProbe}
+\sbox{\CVTypographyProbe}{使用 \textbf{Python} 处理数据}
+\typeout{CVboldexplicit=\the\wd\CVTypographyProbe}
+\CVSection{AI与可信计算}
+\CVEntry{AI研究：可信机器学习评估}{2023年9月 -- 至今}
+  {示范大学 School of Computing}{示范市}{
+  使用Python处理数据。使用 Python 处理数据。通过\textbf{Python}与\textbf{SQL}记录实验。
+}
+\CVParagraph{在LLM评估中报告$F_1$与95\%置信区间，使用Python 3.12与SQL分析10,000条记录；输入包括中文（Chinese）、英文（English）与UTF-8文本。}
+\CVParagraph{研究方向：机器学习、AI安全、科学软件；工具包括Python、SQL、Git、Linux与LaTeX。}
+\CVParagraph{\textbf{重点：}保留真实粗体。\emph{强调：}中文使用楷体，英文使用\emph{italic text}。}
+\CVParagraph{括号与书名号（保持正确换行）：“研究方法”，《科研工作流》；参考文献[1]，模型版本v2.0。}
+\CVSection{排版段落}
+\CVParagraph{机器学习系统的可信性需要透明的研究记录。在多人协作的科学工作流中，通过Python脚本记录数据来源、软件环境、模型参数与评价结果，将实验选择与研究结论联系起来；通过SQL查询与版本管理工具维护一致的实验档案，并向读者提供可复核的技术细节。}
+\end{document}
