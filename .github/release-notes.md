@@ -9,5 +9,7 @@ examples, example PDFs, documentation, and licences.
   which embeds CJK Unicode maps for PDF viewer compatibility.
 - Edit `config/profile.tex` or `config/profile-zh.tex`, the files in `content/`,
   and the corresponding bibliography in `data/` to write your own CV.
+- For typography, entry layout, and publication fields, use the English guide
+  in `docs/guide.md` or the Chinese guide in `docs/guide.zh-CN.md`.
 
 The supplied people, institutions, and publications are fictional examples.
