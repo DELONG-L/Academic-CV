@@ -72,7 +72,7 @@ python3 scripts/build.py --clean
 
 ```bash
 latexmk -xelatex main.tex
-latexmk -xelatex cv-zh.tex
+latexmk -xelatex main-zh.tex
 ```
 
 直接运行 TeX 或在 Overleaf 编译不会执行 Python 的字符映射补全步骤。如果成品在某个内置预览中缺少中文，而 macOS“预览”等阅读器正常，请使用 `scripts/build.py` 生成兼容版 PDF。
@@ -87,7 +87,7 @@ latexmk -xelatex cv-zh.tex
 | 语言 | 主文件 |
 |---|---|
 | 英文 | `main.tex` |
-| 中文 | `cv-zh.tex` |
+| 中文 | `main-zh.tex` |
 
 Overleaf 支持项目使用的标准 BibLaTeX/Biber 工作流。
 

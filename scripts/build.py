@@ -18,7 +18,7 @@ from artifacts import (ROOT, MANIFEST, MANIFEST_SCHEMA, LANGUAGES, PDF_FILES,
 from lint import validate_publications
 from pdf_compat import embed_cjk_maps, pypdf
 
-SOURCES = {"en": "main.tex", "zh": "cv-zh.tex"}
+SOURCES = {"en": "main.tex", "zh": "main-zh.tex"}
 BAD_LOG_MESSAGES = (
     "Overfull ", "Missing character:", "undefined references",
     "undefined citations", "Please (re)run Biber", "LaTeX Error:",

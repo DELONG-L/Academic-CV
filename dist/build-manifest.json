@@ -35,21 +35,21 @@
     "content/zh/supervision.tex": "9da4d97b5a46f962b708122ecbf43cf8e21a6ab547c0a2733ab3032e057aa9d0",
     "content/zh/talks.tex": "d89a74b223369cc322c2138fb1fae76f8d794ace45a44c4a99eb7bec1a12538c",
     "content/zh/teaching.tex": "37f755d4c802b0a2b439e3d336bd1edea0f86dec6bba916ff420776ec8f5d4ab",
-    "cv-zh.tex": "3fdf06c8b53326d673f7b7ae7017a291d1f17466629bbc18d3e4d40f8690e955",
     "data/publications-zh.bib": "8a1d9f8335d796b1d1ffec14b0d9b9314916a434c30042b4c7aac901988b951e",
     "data/publications.bib": "1a06f72f41e89fc5bfb3fd1605db24d76e2382a08714f26b6dba87298bdd6e06",
     "docs/previews/cv-en.png": "e51f7d0d18db29391eeb53bc77bfb79235211059f12e0ad54df2fcf8c78fef6c",
     "docs/previews/cv-zh.png": "19e82586ad6c46c8a849869680ea0b127eb3ce8bc85aa4fcb2f9d32daefe31fd",
+    "main-zh.tex": "3fdf06c8b53326d673f7b7ae7017a291d1f17466629bbc18d3e4d40f8690e955",
     "main.tex": "1da3ec90b87a20ddbd1b530e26c863d18cdcd83c7d7a1177195010a00fcb206e",
     "requirements-build.txt": "16249fd48e9ab96684c30554367ab4777198321c3695f2292f20339e44829594",
     "requirements-qa.txt": "408193de9539abe5b1c55f6750b686fd755da93a8b2ddbb016e18ad28baa8b17",
     "scripts/artifacts.py": "ac0d485fc6cbbc4674063a32c2847fec32dd12bb23b36904a16e412118749a38",
-    "scripts/build.py": "8ecb052c337ce0b73fd3bf4a358c0c7dcf7c86afa79947ff8f22c45742e9ce54",
+    "scripts/build.py": "04086bc4fca47963e7785a577cfc37cc96ed59fec32366af6bc445e662d6088f",
     "scripts/check.py": "42d96fc9f5e8f5dbb3153cc007910332248bf4a9f65ef23440226ebd9eb39f06",
     "scripts/lint.py": "e15432a4ea076a45a28d2d1fa24f670f8414d0a5ed75ac426334fd034d2db88e",
     "scripts/pack.py": "dc588d5c1e5327cf44baa81aab5dff3f6cbf74f032458d72880c8821224f0571",
     "scripts/pdf_compat.py": "8954ec7ba6077f49b55836bd7937e5ee05eee1e8e24a0d7d68911038003efe24",
-    "scripts/smoke.py": "fd7549362f27f45529536c121dee742b683ed733f5b510ab5fbb7164188d085d",
+    "scripts/smoke.py": "77ae17ae4778c518700a9cc910b23139a937f437b2f2b36fde509182fd2d1415",
     "tests/resources.bib": "e56e1e335562ab178e6b1e8d0aad94f59d458c7d1d547a961d2f7a9031eec446",
     "tests/resources.tex": "5eda3772f5cc5237401711ade755ed83859413d2b689421f41cb69b15513c119",
     "tests/section-break.tex": "4be9869edf69fccd018d2a4e7d754af56db1d830d317109b0733958d8946ed2e",
@@ -60,7 +60,7 @@
   },
   "documents": {
     "en": {
-      "source_digest": "4e6404e40fd58c77a2655fe1a37894487dbc81c3c3f0f6dc8ed820fbc1391e41",
+      "source_digest": "3342b3ee47f1f5883f7e34b0306149f318158b1a9ef64472fc468f8bce3dddb3",
       "pdf_sha256": "c1a0fcb1b3837296321fd2358aceb70675e7d0cd746ea8baf5c35e1f5024bc4e",
       "layout": {
         "page-width": 595.275586550436,
@@ -85,7 +85,7 @@
         ],
         "sections": 12
       },
-      "built_at_utc": "2026-10-11T09:44:26.514776+00:00",
+      "built_at_utc": "2026-10-11T10:14:30.622371+00:00",
       "tools": {
         "pypdf": "6.16.1",
         "xelatex": "XeTeX 3.141592653-2.6-0.999998 (TeX Live 2026)",
@@ -94,8 +94,8 @@
       }
     },
     "zh": {
-      "source_digest": "4e6404e40fd58c77a2655fe1a37894487dbc81c3c3f0f6dc8ed820fbc1391e41",
-      "pdf_sha256": "47bd85020f56b7ede242735cce9168292e621ae3e7b96cfa09fa066c2b85dbfa",
+      "source_digest": "3342b3ee47f1f5883f7e34b0306149f318158b1a9ef64472fc468f8bce3dddb3",
+      "pdf_sha256": "04645c6c5889a52526737d354104937c773e28ac740360560a91a57670673f36",
       "layout": {
         "page-width": 595.275586550436,
         "page-height": 841.8897534246576,
@@ -119,7 +119,7 @@
         ],
         "sections": 12
       },
-      "built_at_utc": "2026-10-11T09:44:26.515877+00:00",
+      "built_at_utc": "2026-10-11T10:14:30.623057+00:00",
       "tools": {
         "pypdf": "6.16.1",
         "xelatex": "XeTeX 3.141592653-2.6-0.999998 (TeX Live 2026)",

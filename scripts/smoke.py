@@ -205,14 +205,14 @@ def delivery_checks(destination: Path, fixtures: dict) -> None:
         "_build", "__pycache__", ".git", ".venv", ".academic-cv-*"))
     before = {name: sha256(clone / "dist" / name)
               for name in (*PDF_FILES.values(), MANIFEST)}
-    chinese = clone / "cv-zh.tex"
+    chinese = clone / "main-zh.tex"
     chinese.write_text(chinese.read_text().replace(r"\begin{document}",
                         r"\begin{document}\UndefinedCVRegressionCommand"))
     env = os.environ.copy()
     env["ACADEMIC_CV_BUILD_DIR"] = str(clone / "_build")
     result = subprocess.run([sys.executable, "scripts/build.py"], cwd=clone, env=env,
                             text=True, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, timeout=300)
-    if result.returncode == 0 or "Compilation failed for cv-zh.tex" not in result.stdout:
+    if result.returncode == 0 or "Compilation failed for main-zh.tex" not in result.stdout:
         raise AssertionError("The intended Chinese compilation failure was not observed:\n"
                              + result.stdout[-2500:])
     after = {name: sha256(clone / "dist" / name) for name in before}

@@ -85,7 +85,7 @@ delivery; checks and packaging detect whether it is stale.
 To build one language locally, use `scripts/build.py --language en` or `zh`.
 
 For a TeX-only local build, run `latexmk -xelatex main.tex` for English or
-`latexmk -xelatex cv-zh.tex` for Chinese. These commands require no Python;
+`latexmk -xelatex main-zh.tex` for Chinese. These commands require no Python;
 the Python build additionally embeds CJK maps for compatibility with PDF viewers.
 
 ## Use on Overleaf
@@ -93,7 +93,7 @@ the Python build additionally embeds CJK maps for compatibility with PDF viewers
 1. Download [academic-cv.zip](https://github.com/DELONG-L/Academic-CV/releases/latest/download/academic-cv.zip). **Code → Download ZIP** is also available for the latest repository source.
 2. In Overleaf, choose **New Project → Upload Project** and upload the ZIP.
 3. In project settings, select **TeX Live 2026** and the **XeLaTeX** compiler.
-4. Select `main.tex` for English or `cv-zh.tex` for Simplified Chinese as the main document.
+4. Select `main.tex` for English or `main-zh.tex` for Simplified Chinese as the main document.
 
 Overleaf supports the template's BibLaTeX/Biber workflow.
 
