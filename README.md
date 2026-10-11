@@ -34,7 +34,7 @@ Click either first-page preview to open the complete three-page PDF.
 
 ## Quick start
 
-Use Python 3.10 or newer. Install TeX Live with XeLaTeX, Biber, latexmk, and Chinese language support,
+Use Python 3.10 or newer. Install TeX Live with XeLaTeX, Biber, latexmk, and Chinese language support
 to build both examples.
 
 For Ubuntu 24.04, install the TeX dependencies with:

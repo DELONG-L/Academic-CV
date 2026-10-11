@@ -1,5 +1,5 @@
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{academic-cv}[2026/10/11 v2.6 Academic CV]
+\ProvidesClass{academic-cv}[2026/10/11 v2.7 Academic CV]
 
 % Layout derived from DELONG-L/Normal_Resume (MIT).
 % Modular CV and bibliography conventions inspired by dcetin/Simple-CV (MIT).
@@ -331,7 +331,10 @@
 
 % The separator disappears at a line break. Explicit box spacing survives
 % xeCJK's treatment of ordinary spaces around a font or language change.
+% End any preceding CJK character run before entering discretionary branches.
+% A zero-width kern keeps older XeTeX/xeCJK combinations from crossing groups.
 \newcommand{\cv@linksep}{%
+  \leavevmode\kern0pt\relax
   \discretionary{}{}{\hbox{%
     \hskip.5em\relax\textcolor{cvmuted}{\textbullet}\hskip.5em\relax}}%
 }

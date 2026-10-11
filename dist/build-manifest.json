@@ -3,7 +3,7 @@
   "sources": {
     ".latexmkrc": "17c526317ba05f87633b67a4710ebd9f9bc1e7da709bafb5d8a1a34654a7d2f4",
     "Makefile": "f76e9b267f2d554a0cd2ba225eb1bd85979bd97c8701ff2953d46257a971f635",
-    "academic-cv.cls": "a6368cbec77b79a77525bde296c02cde9803dd3829be646281dd256cdb52ac6d",
+    "academic-cv.cls": "ac166c7e879b57197e8e197786df3f858503d72da15b679a1d3ec5eef7d0f5b3",
     "academic-cv.dbx": "6930e24cf410f5884e6103f7aad1b2be721ea9587ce906bc24b91adda11f617e",
     "config/profile-zh.tex": "ec629a739a33fad857eff842d13a413196ecbcabc6fbb6bb9a3d338c01ab4080",
     "config/profile.tex": "81b71d7f1471227f65ea4a6952d9e7e239a68c57e51732a61b8fa0eea31efd2f",
@@ -59,8 +59,8 @@
   },
   "documents": {
     "en": {
-      "source_digest": "2c34b9caff0fe788c714c978e60c848a9160b655fda6f5661118ff6d4fa104db",
-      "pdf_sha256": "5f9a6c2855e200760075c26e5b99d797a83d0776dd754fcceedba4f7fe1c8b62",
+      "source_digest": "9d79c3ee71d1d983368896d93a2ee8ad397f59f9835e2f356ebf188ce0a1f42a",
+      "pdf_sha256": "fd035402bfd494f2ac0a64f6e88a3c19cc478c616da8297fb0850e0a6d299466",
       "layout": {
         "page-width": 595.275586550436,
         "page-height": 841.8897534246576,
@@ -84,7 +84,7 @@
         ],
         "sections": 12
       },
-      "built_at_utc": "2026-10-11T08:18:23.347691+00:00",
+      "built_at_utc": "2026-10-11T08:29:51.045174+00:00",
       "tools": {
         "pypdf": "6.16.1",
         "xelatex": "XeTeX 3.141592653-2.6-0.999998 (TeX Live 2026)",
@@ -93,8 +93,8 @@
       }
     },
     "zh": {
-      "source_digest": "2c34b9caff0fe788c714c978e60c848a9160b655fda6f5661118ff6d4fa104db",
-      "pdf_sha256": "255f84a9397839e65a641f782a2f2acf43ca8cca4ab3ace4ea9f76b3c0758419",
+      "source_digest": "9d79c3ee71d1d983368896d93a2ee8ad397f59f9835e2f356ebf188ce0a1f42a",
+      "pdf_sha256": "62264b3a7b554f945620725dc69d05392ff907ad7182defee6dbec075cadafd4",
       "layout": {
         "page-width": 595.275586550436,
         "page-height": 841.8897534246576,
@@ -118,7 +118,7 @@
         ],
         "sections": 12
       },
-      "built_at_utc": "2026-10-11T08:18:23.348631+00:00",
+      "built_at_utc": "2026-10-11T08:29:51.045988+00:00",
       "tools": {
         "pypdf": "6.16.1",
         "xelatex": "XeTeX 3.141592653-2.6-0.999998 (TeX Live 2026)",
