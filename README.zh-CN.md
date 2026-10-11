@@ -8,7 +8,6 @@
   <a href="https://github.com/DELONG-L/Academic-CV/actions/workflows/build.yml"><img src="https://github.com/DELONG-L/Academic-CV/actions/workflows/build.yml/badge.svg?branch=main" alt="自动构建状态"></a>
   <a href="https://github.com/DELONG-L/Academic-CV/releases/latest"><img src="https://img.shields.io/github/v/release/DELONG-L/Academic-CV?label=release&amp;color=333333" alt="最新版本"></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-333333" alt="MIT 许可"></a>
-  <a href="#开始使用"><img src="https://img.shields.io/badge/engine-XeLaTeX-333333" alt="XeLaTeX 编译器"></a>
 </p>
 
 <p>
