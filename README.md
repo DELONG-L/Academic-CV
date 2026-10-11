@@ -347,7 +347,6 @@ without publishing the CV.
 
 ## Attribution
 
-The layout follows [Normal Resume](https://github.com/DELONG-L/Normal_Resume).
 The modular structure and bibliography approach are inspired by
 [Simple-CV](https://github.com/dcetin/Simple-CV). Academic section coverage
 draws on [Academic CV by Diego](https://github.com/damascenodiego/Academic-CV-by-Diego)

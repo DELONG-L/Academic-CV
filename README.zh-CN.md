@@ -1,6 +1,6 @@
 # Academic CV
 
-一个适合长期维护的 LaTeX 学术 CV 模板。保留 Normal Resume 的单栏、衬线字体、居中姓名、横线分节和右侧日期，并加入论文管理与多页排版。
+一个适合长期维护的 LaTeX 学术 CV 模板。采用单栏、衬线字体、居中姓名、横线分节和右侧日期，支持论文管理与多页排版。
 
 模板类文件为 `academic-cv.cls`，使用 `\documentclass{academic-cv}` 加载。
 
@@ -320,6 +320,6 @@ python3 scripts/pack.py
 
 ## 项目来源与许可
 
-本项目延续 [Normal Resume](https://github.com/DELONG-L/Normal_Resume) 的视觉风格，并借鉴 [Simple-CV](https://github.com/dcetin/Simple-CV) 的模块化和论文管理思路。学术栏目参考 [Academic CV by Diego](https://github.com/damascenodiego/Academic-CV-by-Diego) 与 [academistral-cv](https://github.com/beyefendi/academistral-cv)；未复制这两个项目的源码。
+本项目借鉴 [Simple-CV](https://github.com/dcetin/Simple-CV) 的模块化和论文管理思路。学术栏目参考 [Academic CV by Diego](https://github.com/damascenodiego/Academic-CV-by-Diego) 与 [academistral-cv](https://github.com/beyefendi/academistral-cv)；未复制这两个项目的源码。
 
 项目采用 MIT 许可。原始 MIT 声明保存在 `licenses/`，具体来源与实现边界见 [NOTICE.md](NOTICE.md)。

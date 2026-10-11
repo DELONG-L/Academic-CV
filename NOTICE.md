@@ -2,15 +2,6 @@
 
 This document records attribution for maintaining and redistributing the template.
 
-## Normal Resume
-
-- Repository: https://github.com/DELONG-L/Normal_Resume
-- Reviewed revision: `f59406758751a557d35564100c26b5b0eddbd79b`
-- License: MIT, copyright 2025 DELONG LI.
-- Used for: serif typography, centred name and contacts, ruled small-cap headings,
-  compact lists, and dates aligned on the right.
-- Original notice: `licenses/academic-cv-layout-source-MIT.txt`.
-
 ## Simple-CV
 
 - Repository: https://github.com/dcetin/Simple-CV
