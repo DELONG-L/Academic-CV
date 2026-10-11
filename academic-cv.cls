@@ -5,7 +5,6 @@
   \ClassError{academic-cv}{Updated TeX Live 2026 is required}{Update TeX Live, or select TeX Live 2026 and XeLaTeX in Overleaf.}%
 }
 
-% Layout derived from DELONG-L/Normal_Resume (MIT).
 % Modular CV and bibliography conventions inspired by dcetin/Simple-CV (MIT).
 % Original copyright notices are retained in licenses/. See NOTICE.md.
 
