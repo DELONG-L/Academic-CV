@@ -36,7 +36,19 @@
 
 需要 Python 3.10 或更新版本，以及包含 XeLaTeX、Biber、latexmk 和中文支持的 TeX Live。macOS 会自动查找 `/Library/TeX/texbin`。其他系统可将这些工具加入 PATH，或设置 `TEXLIVE_BIN`。
 
-克隆仓库后，在独立的 Python 环境中构建两份示例：
+建议在独立的 Python 环境中构建两份示例。
+
+Ubuntu 24.04 可使用以下命令安装 TeX 依赖：
+
+```bash
+sudo apt-get update
+sudo apt-get install -y --no-install-recommends \
+  texlive-xetex texlive-latex-extra texlive-fonts-recommended \
+  texlive-fonts-extra texlive-lang-chinese texlive-bibtex-extra \
+  fonts-texgyre biber latexmk python3-venv
+```
+
+然后克隆仓库并构建：
 
 ```bash
 git clone https://github.com/DELONG-L/Academic-CV.git

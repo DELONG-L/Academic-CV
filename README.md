@@ -35,7 +35,19 @@ Click either first-page preview to open the complete three-page PDF.
 ## Quick start
 
 Use Python 3.10 or newer. Install TeX Live with XeLaTeX, Biber, latexmk, and Chinese language support,
-then clone the repository and build both examples:
+to build both examples.
+
+For Ubuntu 24.04, install the TeX dependencies with:
+
+```bash
+sudo apt-get update
+sudo apt-get install -y --no-install-recommends \
+  texlive-xetex texlive-latex-extra texlive-fonts-recommended \
+  texlive-fonts-extra texlive-lang-chinese texlive-bibtex-extra \
+  fonts-texgyre biber latexmk python3-venv
+```
+
+Then clone the repository and build:
 
 ```bash
 git clone https://github.com/DELONG-L/Academic-CV.git
