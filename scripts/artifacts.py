@@ -19,7 +19,8 @@ INPUT_SUFFIXES = {
     ".tex", ".cls", ".sty", ".bib", ".bst", ".bbx", ".cbx", ".dbx", ".def",
     ".py", ".png", ".jpg", ".jpeg", ".pdf", ".svg", ".otf", ".ttf",
 }
-INPUT_NAMES = {".latexmkrc", "Makefile", "requirements-build.txt", "requirements-qa.txt"}
+INPUT_NAMES = {".latexmkrc", "Makefile", "requirements-build.txt", "requirements-qa.txt",
+               "texlive-packages.txt"}
 
 
 def sha256(path: Path) -> str:

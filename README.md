@@ -34,20 +34,17 @@ Click either first-page preview to open the complete three-page PDF.
 
 ## Quick start
 
-Use Python 3.10 or newer. Install TeX Live with XeLaTeX, Biber, latexmk, and Chinese language support
-to build both examples.
+Use Python 3.10 or newer and an updated **TeX Live 2026**
+(LaTeX kernel 2026-06-01 or newer). The template requires XeLaTeX, Biber,
+latexmk, and Chinese language support. Install the current TeX Live using
+the [official installation guide](https://tug.org/texlive/quickinstall.html),
+or install MacTeX on macOS, and update its packages with `tlmgr update --self --all`.
+The full distribution includes all required fonts and packages; a smaller
+installation can use the package list in `texlive-packages.txt`.
+Older system packages, including Ubuntu 24.04's default TeX Live, are not supported.
+GitHub Actions uses the same TeX Live 2026 version.
 
-For Ubuntu 24.04, install the TeX dependencies with:
-
-```bash
-sudo apt-get update
-sudo apt-get install -y --no-install-recommends \
-  texlive-xetex texlive-latex-extra texlive-fonts-recommended \
-  texlive-fonts-extra texlive-lang-chinese texlive-bibtex-extra \
-  fonts-texgyre biber latexmk python3-venv
-```
-
-Then clone the repository and build:
+Clone the repository and build:
 
 ```bash
 git clone https://github.com/DELONG-L/Academic-CV.git
@@ -81,7 +78,7 @@ To build one language locally, use `scripts/build.py --language en` or `zh`.
 
 1. Download the repository using **Code → Download ZIP**, or generate a ZIP with `python3 scripts/pack.py` after building both examples.
 2. In Overleaf, choose **New Project → Upload Project** and upload the ZIP.
-3. Set the compiler to **XeLaTeX**.
+3. In project settings, select **TeX Live 2026** and the **XeLaTeX** compiler.
 4. Select `main.tex` for English or `cv-zh.tex` for Simplified Chinese as the main document.
 
 Overleaf supports the template's BibLaTeX/Biber workflow.

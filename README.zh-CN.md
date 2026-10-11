@@ -34,21 +34,9 @@
 
 ## 快速开始
 
-需要 Python 3.10 或更新版本，以及包含 XeLaTeX、Biber、latexmk 和中文支持的 TeX Live。macOS 会自动查找 `/Library/TeX/texbin`。其他系统可将这些工具加入 PATH，或设置 `TEXLIVE_BIN`。
+需要 Python 3.10 或更新版本，以及更新后的 **TeX Live 2026**（LaTeX 内核为 2026-06-01 或更新版本）。模板使用 XeLaTeX、Biber、latexmk 和中文支持。请按照 [TeX Live 官方安装指南](https://tug.org/texlive/quickinstall.html) 安装当前版本；macOS 也可安装 MacTeX。安装后使用 `tlmgr update --self --all` 更新组件。完整发行版包含所需字体和宏包；精简安装可参考 `texlive-packages.txt`。Ubuntu 24.04 默认提供的旧版 TeX Live 不在支持范围内。GitHub Actions 同样使用 TeX Live 2026。
 
-建议在独立的 Python 环境中构建两份示例。
-
-Ubuntu 24.04 可使用以下命令安装 TeX 依赖：
-
-```bash
-sudo apt-get update
-sudo apt-get install -y --no-install-recommends \
-  texlive-xetex texlive-latex-extra texlive-fonts-recommended \
-  texlive-fonts-extra texlive-lang-chinese texlive-bibtex-extra \
-  fonts-texgyre biber latexmk python3-venv
-```
-
-然后克隆仓库并构建：
+macOS 会自动查找 `/Library/TeX/texbin`。其他系统可将这些工具加入 PATH，或设置 `TEXLIVE_BIN`。建议在独立的 Python 环境中构建两份示例：
 
 ```bash
 git clone https://github.com/DELONG-L/Academic-CV.git
@@ -86,7 +74,7 @@ latexmk -xelatex cv-zh.tex
 
 1. 在 GitHub 选择 **Code → Download ZIP**，或在构建两份示例后运行 `python3 scripts/pack.py` 生成 ZIP。
 2. 在 Overleaf 中选择 **New Project → Upload Project**，上传 ZIP。
-3. 将编译器设为 **XeLaTeX**。
+3. 在项目设置中选择 **TeX Live 2026**，并将编译器设为 **XeLaTeX**。
 4. 按下表选择主文件。
 
 | 语言 | 主文件 |

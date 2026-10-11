@@ -1,0 +1,11 @@
+scheme-small
+collection-xetex
+collection-latexextra
+collection-langchinese
+biblatex
+biber
+latexmk
+fontawesome5
+tex-gyre
+fandol
+adobemapping
