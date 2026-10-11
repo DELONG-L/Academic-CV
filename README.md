@@ -5,7 +5,7 @@ centred name, ruled section headings, and dates aligned on the right.
 
 The class file is `academic-cv.cls`; load it with `\documentclass{academic-cv}`.
 
-[简体中文](README.zh-CN.md) · [English example](dist/cv.pdf) · [Chinese example](dist/cv-zh.pdf)
+[Download TeX source ZIP](https://github.com/DELONG-L/Academic-CV/releases/latest/download/academic-cv.zip) · [简体中文](README.zh-CN.md) · [English example](dist/cv.pdf) · [Chinese example](dist/cv-zh.pdf)
 
 The people, institutions, publications, and achievements in the supplied
 example are fictional. They are not the project owner's personal information.
@@ -34,6 +34,11 @@ Click either first-page preview to open the complete three-page PDF.
 
 ## Quick start
 
+Download the [ready-to-use source ZIP](https://github.com/DELONG-L/Academic-CV/releases/latest/download/academic-cv.zip).
+It includes editable TeX and bibliography files, English and Chinese examples,
+example PDFs, documentation, and licences. Upload it directly to Overleaf,
+or extract it to a local folder. You do not need Git to use the ZIP.
+
 Use Python 3.10 or newer and an updated **TeX Live 2026**
 (LaTeX kernel 2026-06-01 or newer). The template requires XeLaTeX, Biber,
 latexmk, and Chinese language support. Install the current TeX Live using
@@ -44,11 +49,16 @@ installation can use the package list in `texlive-packages.txt`.
 Older system packages, including Ubuntu 24.04's default TeX Live, are not supported.
 GitHub Actions uses the same TeX Live 2026 version.
 
-Clone the repository and build:
+Alternatively, clone the repository:
 
 ```bash
 git clone https://github.com/DELONG-L/Academic-CV.git
 cd Academic-CV
+```
+
+Open a terminal in the extracted or cloned project folder, then run:
+
+```bash
 python3 -m venv .venv
 source .venv/bin/activate
 python3 -m pip install -r requirements-build.txt
@@ -74,9 +84,13 @@ delivery; checks and packaging detect whether it is stale.
 
 To build one language locally, use `scripts/build.py --language en` or `zh`.
 
+For a TeX-only local build, run `latexmk -xelatex main.tex` for English or
+`latexmk -xelatex cv-zh.tex` for Chinese. These commands require no Python;
+the Python build additionally embeds CJK maps for compatibility with PDF viewers.
+
 ## Use on Overleaf
 
-1. Download the repository using **Code → Download ZIP**, or generate a ZIP with `python3 scripts/pack.py` after building both examples.
+1. Download [academic-cv.zip](https://github.com/DELONG-L/Academic-CV/releases/latest/download/academic-cv.zip). **Code → Download ZIP** is also available for the latest repository source.
 2. In Overleaf, choose **New Project → Upload Project** and upload the ZIP.
 3. In project settings, select **TeX Live 2026** and the **XeLaTeX** compiler.
 4. Select `main.tex` for English or `cv-zh.tex` for Simplified Chinese as the main document.
@@ -342,8 +356,9 @@ The default archive is `dist/academic-cv.zip`.
 Packaging requires both language PDFs to match the current source and recorded checksums.
 After rebuilding only one language, rebuild both if the other is stale.
 The ZIP contains source files, documentation, example PDFs, the build manifest,
-and licences. Build caches are excluded. GitHub Actions compiles and checks the project
-without publishing the CV.
+and licences. Build caches are excluded. GitHub Actions builds, checks, and packages
+the examples. Version tags beginning with `v` publish the source ZIP and both
+example PDFs as GitHub Release assets.
 
 ## Attribution
 

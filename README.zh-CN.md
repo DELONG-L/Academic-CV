@@ -4,7 +4,7 @@
 
 模板类文件为 `academic-cv.cls`，使用 `\documentclass{academic-cv}` 加载。
 
-[English](README.md) · [英文示例](dist/cv.pdf) · [中文示例](dist/cv-zh.pdf)
+[下载 TeX 源码 ZIP](https://github.com/DELONG-L/Academic-CV/releases/latest/download/academic-cv.zip) · [English](README.md) · [英文示例](dist/cv.pdf) · [中文示例](dist/cv-zh.pdf)
 
 示例中的人物、机构、论文和经历均为虚构，用于展示格式。它们不是项目所有者的个人资料。
 
@@ -34,13 +34,20 @@
 
 ## 快速开始
 
+下载准备好的 [TeX 源码 ZIP](https://github.com/DELONG-L/Academic-CV/releases/latest/download/academic-cv.zip)。压缩包包含可编辑的 TeX 和论文资料、中英文示例、示例 PDF、使用说明和许可证。可以直接上传到 Overleaf，也可以解压后在本地修改和编译，无需安装 Git。
+
 需要 Python 3.10 或更新版本，以及更新后的 **TeX Live 2026**（LaTeX 内核为 2026-06-01 或更新版本）。模板使用 XeLaTeX、Biber、latexmk 和中文支持。请按照 [TeX Live 官方安装指南](https://tug.org/texlive/quickinstall.html) 安装当前版本；macOS 也可安装 MacTeX。安装后使用 `tlmgr update --self --all` 更新组件。完整发行版包含所需字体和宏包；精简安装可参考 `texlive-packages.txt`。Ubuntu 24.04 默认提供的旧版 TeX Live 不在支持范围内。GitHub Actions 同样使用 TeX Live 2026。
 
-macOS 会自动查找 `/Library/TeX/texbin`。其他系统可将这些工具加入 PATH，或设置 `TEXLIVE_BIN`。建议在独立的 Python 环境中构建两份示例：
+macOS 会自动查找 `/Library/TeX/texbin`。其他系统可将这些工具加入 PATH，或设置 `TEXLIVE_BIN`。也可以通过 Git 克隆项目：
 
 ```bash
 git clone https://github.com/DELONG-L/Academic-CV.git
 cd Academic-CV
+```
+
+在解压或克隆后的项目文件夹中打开终端，使用独立的 Python 环境构建：
+
+```bash
 python3 -m venv .venv
 source .venv/bin/activate
 python3 -m pip install -r requirements-build.txt
@@ -61,7 +68,7 @@ python3 scripts/build.py --language zh
 python3 scripts/build.py --clean
 ```
 
-也可以直接使用 TeX 工具：
+也可以直接使用 TeX 工具，无需 Python：
 
 ```bash
 latexmk -xelatex main.tex
@@ -72,7 +79,7 @@ latexmk -xelatex cv-zh.tex
 
 ## Overleaf
 
-1. 在 GitHub 选择 **Code → Download ZIP**，或在构建两份示例后运行 `python3 scripts/pack.py` 生成 ZIP。
+1. 下载 [academic-cv.zip](https://github.com/DELONG-L/Academic-CV/releases/latest/download/academic-cv.zip)。也可使用 GitHub 的 **Code → Download ZIP** 获取最新仓库源码。
 2. 在 Overleaf 中选择 **New Project → Upload Project**，上传 ZIP。
 3. 在项目设置中选择 **TeX Live 2026**，并将编译器设为 **XeLaTeX**。
 4. 按下表选择主文件。
@@ -316,7 +323,7 @@ python3 scripts/lint.py
 python3 scripts/pack.py
 ```
 
-打包要求中英文示例都对应当前源码，且 PDF 校验值未变化。只重建一种语言后，若另一种语言已过期，应先重建全部版本再打包。ZIP 包含可编辑源码、文档、示例 PDF、构建清单和许可证，不包含编译缓存。GitHub Actions 只编译和检查，不发布个人 CV。
+打包要求中英文示例都对应当前源码，且 PDF 校验值未变化。只重建一种语言后，若另一种语言已过期，应先重建全部版本再打包。ZIP 包含可编辑源码、文档、示例 PDF、构建清单和许可证，不包含编译缓存。GitHub Actions 自动构建、检查和打包示例；推送以 `v` 开头的版本标签时，将源码 ZIP 和两份示例 PDF 发布到 GitHub Release。
 
 ## 项目来源与许可
 
