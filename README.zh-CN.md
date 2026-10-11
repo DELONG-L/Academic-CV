@@ -22,17 +22,9 @@
 
 单栏、居中姓名、横线分节与右侧日期。点击第一页预览，可打开完整的三页 PDF。
 
-<table>
-  <tr><th width="50%">英文</th><th width="50%">简体中文</th></tr>
-  <tr>
-    <td><a href="dist/cv.pdf"><img src="docs/previews/cv-en.png" alt="英文学术 CV 第一页" width="420"></a></td>
-    <td><a href="dist/cv-zh.pdf"><img src="docs/previews/cv-zh.png" alt="简体中文学术 CV 第一页" width="420"></a></td>
-  </tr>
-  <tr>
-    <td align="center"><a href="dist/cv.pdf">英文 PDF</a></td>
-    <td align="center"><a href="dist/cv-zh.pdf">中文 PDF</a></td>
-  </tr>
-</table>
+<p align="center"><a href="dist/cv-zh.pdf"><img src="docs/previews/cv-zh.png" alt="简体中文学术 CV 第一页" width="560"></a></p>
+
+[中文 PDF](dist/cv-zh.pdf) · [英文 PDF](dist/cv.pdf)
 
 示例中的人物、机构、论文和经历均为虚构，用于展示格式。
 

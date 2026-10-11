@@ -23,17 +23,9 @@
 Single column, centred name, ruled section headings, and dates aligned on the right.
 Click a first-page preview to open its complete three-page PDF.
 
-<table>
-  <tr><th width="50%">English</th><th width="50%">简体中文</th></tr>
-  <tr>
-    <td><a href="dist/cv.pdf"><img src="docs/previews/cv-en.png" alt="First page of the English academic CV" width="420"></a></td>
-    <td><a href="dist/cv-zh.pdf"><img src="docs/previews/cv-zh.png" alt="First page of the Simplified Chinese academic CV" width="420"></a></td>
-  </tr>
-  <tr>
-    <td align="center"><a href="dist/cv.pdf">English PDF</a></td>
-    <td align="center"><a href="dist/cv-zh.pdf">Chinese PDF</a></td>
-  </tr>
-</table>
+<p align="center"><a href="dist/cv.pdf"><img src="docs/previews/cv-en.png" alt="First page of the English academic CV" width="560"></a></p>
+
+[English PDF](dist/cv.pdf) · [Chinese PDF](dist/cv-zh.pdf)
 
 The supplied people, institutions, publications, and achievements are fictional examples.
 
